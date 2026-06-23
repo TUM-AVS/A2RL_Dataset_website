@@ -3,518 +3,457 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+
+  <meta name="title" content="A2RL Vmax: The A2RL autonomous racing dataset for long-range, high-speed perception and multi-vehicle interaction">
+  <meta name="description" content="A2RL Vmax is an autonomous racing perception dataset with long-range LiDAR and RADAR data, multi-vehicle interactions, and professionally annotated 3D labels.">
+  <meta name="keywords" content="autonomous racing, perception dataset, LiDAR, RADAR, 3D detection, tracking, multi-vehicle interaction, high-speed autonomous driving">
+  <meta name="author" content="Marvin Klemp, Dominic Ebner, Cornelius Schröder, Davide Malvezzi, László Turányi, Riccardo Donati, Ilia Schminik, Xia Ning, Yanxin Zhou, Matthew Flagg, Christoph Stiller, Markus Lienkamp, Marko Bertogna, Gergely Bári, Andreas Birk, Ren Jin, Chen Lv, Johannes Betz">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
-  
-  <!-- Open Graph / Facebook -->
+
   <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
-  <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta property="og:site_name" content="A2RL Vmax Dataset">
+  <meta property="og:title" content="A2RL Vmax: The A2RL autonomous racing dataset for long-range, high-speed perception and multi-vehicle interaction">
+  <meta property="og:description" content="An autonomous racing dataset for long-range, high-speed perception with annotated LiDAR point clouds, RADAR data, and multi-vehicle race interactions.">
+  <meta property="og:url" content="https://tum-avs.github.io/A2RL_Dataset_website/">
+  <meta property="og:image" content="https://tum-avs.github.io/A2RL_Dataset_website/static/images/social_preview.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="og:image:alt" content="A2RL Vmax dataset overview">
+  <meta property="article:published_time" content="2026-06-19T07:04:11Z">
   <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
+  <meta property="article:tag" content="Autonomous Racing">
+  <meta property="article:tag" content="Perception Dataset">
 
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta name="twitter:title" content="A2RL Vmax">
+  <meta name="twitter:description" content="A long-range, high-speed autonomous racing perception dataset with annotated LiDAR and RADAR data.">
+  <meta name="twitter:image" content="https://tum-avs.github.io/A2RL_Dataset_website/static/images/social_preview.png">
+  <meta name="twitter:image:alt" content="A2RL Vmax dataset overview">
 
-  <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
-  
-  <!-- Additional SEO -->
+  <meta name="citation_title" content="A2RL Vmax: The A2RL autonomous racing dataset for long-range, high-speed perception and multi-vehicle interaction">
+  <meta name="citation_author" content="Klemp, Marvin">
+  <meta name="citation_author" content="Ebner, Dominic">
+  <meta name="citation_author" content="Schröder, Cornelius">
+  <meta name="citation_author" content="Malvezzi, Davide">
+  <meta name="citation_author" content="Turányi, László">
+  <meta name="citation_author" content="Donati, Riccardo">
+  <meta name="citation_author" content="Schminik, Ilia">
+  <meta name="citation_author" content="Ning, Xia">
+  <meta name="citation_author" content="Zhou, Yanxin">
+  <meta name="citation_author" content="Flagg, Matthew">
+  <meta name="citation_author" content="Stiller, Christoph">
+  <meta name="citation_author" content="Lienkamp, Markus">
+  <meta name="citation_author" content="Bertogna, Marko">
+  <meta name="citation_author" content="Bári, Gergely">
+  <meta name="citation_author" content="Birk, Andreas">
+  <meta name="citation_author" content="Jin, Ren">
+  <meta name="citation_author" content="Lv, Chen">
+  <meta name="citation_author" content="Betz, Johannes">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_conference_title" content="IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)">
+  <meta name="citation_pdf_url" content="https://tum-avs.github.io/A2RL_Dataset_website/static/pdfs/paper.pdf">
+
   <meta name="theme-color" content="#2563eb">
   <meta name="msapplication-TileColor" content="#2563eb">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
-  <!-- Preconnect for performance -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://ajax.googleapis.com">
-  <link rel="preconnect" href="https://documentcloud.adobe.com">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
+  <title>A2RL Vmax | Academic Research</title>
 
-  <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
-  
-  <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link rel="apple-touch-icon" href="static/images/favicon.ico">
-  
-  <!-- Critical CSS - Load synchronously -->
+
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  
-  <!-- Non-critical CSS - Load asynchronously -->
   <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
-  <!-- Fallback for browsers that don't support preload -->
+
   <noscript>
     <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
     <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   </noscript>
-  
-  <!-- Fonts - Optimized loading -->
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Defer non-critical JavaScript -->
+
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script defer src="static/js/bulma-carousel.min.js"></script>
-  <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
-  
-  <!-- Structured Data for Academic Papers -->
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "headline": "A2RL Vmax: The A2RL autonomous racing dataset for long-range, high-speed perception and multi-vehicle interaction",
+    "description": "A2RL Vmax is a long-range, high-speed autonomous racing dataset with professionally annotated LiDAR point clouds, RADAR point clouds, and multi-vehicle interaction scenarios.",
     "author": [
-      {
-        "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      }
+      {"@type": "Person", "name": "Marvin Klemp"},
+      {"@type": "Person", "name": "Dominic Ebner"},
+      {"@type": "Person", "name": "Cornelius Schröder"},
+      {"@type": "Person", "name": "Davide Malvezzi"},
+      {"@type": "Person", "name": "László Turányi"},
+      {"@type": "Person", "name": "Riccardo Donati"},
+      {"@type": "Person", "name": "Ilia Schminik"},
+      {"@type": "Person", "name": "Xia Ning"},
+      {"@type": "Person", "name": "Yanxin Zhou"},
+      {"@type": "Person", "name": "Matthew Flagg"},
+      {"@type": "Person", "name": "Christoph Stiller"},
+      {"@type": "Person", "name": "Markus Lienkamp"},
+      {"@type": "Person", "name": "Marko Bertogna"},
+      {"@type": "Person", "name": "Gergely Bári"},
+      {"@type": "Person", "name": "Andreas Birk"},
+      {"@type": "Person", "name": "Ren Jin"},
+      {"@type": "Person", "name": "Chen Lv"},
+      {"@type": "Person", "name": "Johannes Betz"}
     ],
-    "datePublished": "2024-01-01",
+    "datePublished": "2026-06-19",
     "publisher": {
       "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
+      "name": "IEEE/RSJ IROS 2026"
     },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
+    "url": "https://tum-avs.github.io/A2RL_Dataset_website/",
+    "image": "https://tum-avs.github.io/A2RL_Dataset_website/static/images/social_preview.png",
+    "keywords": [
+      "autonomous racing",
+      "perception dataset",
+      "LiDAR",
+      "RADAR",
+      "3D detection",
+      "tracking"
+    ],
+    "abstract": "A2RL Vmax is an autonomous racing dataset designed for long-range, high-speed perception and multi-vehicle interaction. It contains professionally annotated LiDAR point clouds, RADAR point clouds, and race scenarios collected during the 2024 Abu Dhabi Autonomous Racing League at Yas Marina F1 Circuit.",
     "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "license": "https://creativecommons.org/licenses/by-sa/4.0/",
     "mainEntity": {
       "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
-      }
-    ]
+      "@id": "https://tum-avs.github.io/A2RL_Dataset_website/"
+    }
   }
   </script>
-  
-  <!-- Website/Organization Structured Data -->
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
+    "@type": "WebSite",
+    "name": "A2RL Vmax",
+    "url": "https://tum-avs.github.io/A2RL_Dataset_website/"
   }
   </script>
 </head>
 <body>
-
-
-  <!-- Scroll to Top Button -->
   <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown -->
   <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
+    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View dataset highlights">
+      <i class="fas fa-database"></i>
+      Dataset Highlights
       <i class="fas fa-chevron-down dropdown-arrow"></i>
     </button>
     <div class="more-works-dropdown" id="moreWorksDropdown">
       <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
+        <h4>A2RL Vmax at a glance</h4>
+        <button class="close-btn" onclick="toggleMoreWorks()" aria-label="Close dataset highlights">
           <i class="fas fa-times"></i>
         </button>
       </div>
       <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
+        <div class="work-item work-item-static">
           <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
+            <h5>Competition coverage</h5>
+            <p>Data from time-trial, attack-and-defend, and the final four-vehicle race at Yas Marina F1 Circuit.</p>
           </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
+        </div>
+        <div class="work-item work-item-static">
           <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
+            <h5>297 scenes and 466 tracks</h5>
+            <p>Multi-vehicle interaction data curated for detection, tracking, and future prediction tasks.</p>
           </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
+        </div>
+        <div class="work-item work-item-static">
           <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
+            <h5>305,531 LiDAR point clouds</h5>
+            <p>Includes 28,791 professionally annotated frames and 38,545 vehicle bounding boxes.</p>
           </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
+        </div>
+        <div class="work-item work-item-static">
+          <div class="work-info">
+            <h5>386,006 RADAR point clouds</h5>
+            <p>Complementary long-range sensing for extreme-speed perception research.</p>
+          </div>
+        </div>
+        <div class="work-item work-item-static">
+          <div class="work-info">
+            <h5>Eight contributing teams</h5>
+            <p>Competition data shared across participating teams to build a common research benchmark.</p>
+          </div>
+        </div>
+        <div class="work-item work-item-static">
+          <div class="work-info">
+            <h5>nuScenes-compatible format</h5>
+            <p>Designed for straightforward training and evaluation with existing 3D detection and tracking tooling.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
   <main id="main-content">
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">A2RL V<sub>max</sub>: The A2RL autonomous racing dataset for long-range, high-speed perception and multi-vehicle interaction</h1>
+              <div class="is-size-5 publication-authors">
+                <span class="author-block">Marvin Klemp<sup>1,10</sup>,</span>
+                <span class="author-block">Dominic Ebner<sup>2</sup>,</span>
+                <span class="author-block">Cornelius Schröder<sup>2</sup>,</span>
+                <span class="author-block">Davide Malvezzi<sup>4</sup>,</span>
+                <span class="author-block">László Turányi<sup>5</sup>,</span>
+                <span class="author-block">Riccardo Donati<sup>6</sup>,</span>
+                <span class="author-block">Ilia Schminik<sup>7</sup>,</span>
+                <span class="author-block">Xia Ning<sup>8</sup>,</span>
+                <span class="author-block">Yanxin Zhou<sup>9</sup>,</span>
+                <span class="author-block">Matthew Flagg<sup>11</sup>,</span>
+                <span class="author-block">Christoph Stiller<sup>1</sup>,</span>
+                <span class="author-block">Markus Lienkamp<sup>2</sup>,</span>
+                <span class="author-block">Marko Bertogna<sup>4</sup>,</span>
+                <span class="author-block">Gergely Bári<sup>5</sup>,</span>
+                <span class="author-block">Andreas Birk<sup>7</sup>,</span>
+                <span class="author-block">Ren Jin<sup>8</sup>,</span>
+                <span class="author-block">Chen Lv<sup>9</sup>,</span>
+                <span class="author-block">Johannes Betz<sup>3</sup></span>
+              </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+              <div class="is-size-6 publication-authors affiliation-block">
+                <span class="author-block"><sup>1</sup>Karlsruhe Institute of Technology</span>
+                <span class="author-block"><sup>2</sup>Institute of Automotive Technology, TU Munich</span>
+                <span class="author-block"><sup>3</sup>Professorship of Autonomous Vehicle Systems, Technical University of Munich</span>
+                <span class="author-block"><sup>4</sup>University of Modena and Reggio Emilia</span>
+                <span class="author-block"><sup>5</sup>Széchenyi István University</span>
+                <span class="author-block"><sup>6</sup>Polytechnic Institute of Milan</span>
+                <span class="author-block"><sup>7</sup>Constructor University</span>
+                <span class="author-block"><sup>8</sup>Beijing Institute of Technology</span>
+                <span class="author-block"><sup>9</sup>Nanyang Technological University</span>
+                <span class="author-block"><sup>10</sup>AIPEX</span>
+                <span class="author-block"><sup>11</sup>Code 19 Racing</span>
+              </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
+              <div class="publication-venue">IROS 2026</div>
+
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="static/pdfs/paper.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
                     </span>
-
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
-                  <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="https://github.com/TUM-AVS/A2RL_Dataset_website" target="_blank" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Code</span>
+                    <span>GitHub</span>
                   </a>
                 </span>
-
-                <!-- TODO: Update with your arXiv paper ID -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+                  <a href="#poster" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-scroll"></i>
+                    </span>
+                    <span>Read Online</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="#BibTeX" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-google-scholar"></i>
+                    </span>
+                    <span>BibTeX</span>
+                  </a>
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <div class="publication-banner">
+            <img src="static/images/a2rl-hero.png" alt="A2RL autonomous racecar on the Yas Marina F1 Circuit" loading="eager">
+          </div>
+          <h2 class="subtitle has-text-centered teaser-caption">
+            A2RL V<sub>max</sub> introduces long-range, high-speed perception data collected during the Abu Dhabi Autonomous Racing League, including multi-vehicle race interactions and professionally annotated LiDAR point clouds.
+          </h2>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+    </section>
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+    <section class="section hero is-light" id="abstract">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                A2RL V<sub>max</sub> is an open-source perception dataset built for high-speed autonomous driving and multi-vehicle racing interaction. The data was captured during the 2024 Abu Dhabi Autonomous Racing League at the Yas Marina F1 Circuit and covers both single-vehicle sessions at varying speeds and competitive multi-vehicle race scenarios.
+              </p>
+              <p>
+                The dataset contains nearly 30,000 professionally annotated LiDAR point clouds together with RADAR point clouds, making it the first large-scale autonomous racing dataset of this kind to support deep-learning-based perception research with dense expert labels.
+              </p>
+              <p>
+                To make the dataset practical for future work, the authors provide the data in a developer-friendly format and benchmark off-the-shelf 3D detection and tracking methods, showing that while standard baselines perform reasonably well at short range, specialized methods are still needed for long-range, high-speed racing conditions.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
+    </section>
+
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="title is-3 has-text-centered">Figures</h2>
+          <div class="section-intro has-text-centered">
+            Three core visuals from the paper summarizing the race platform, sensing stack, and benchmark setting.
+          </div>
+          <div class="carousel results-carousel">
+            <div class="item">
+              <img src="static/images/a2rl-hero.png" alt="A2RL racecar at Yas Marina Circuit" loading="lazy">
+              <h2 class="subtitle has-text-centered">
+                The A2RL autonomous racecar platform used to collect real-world competition data at the Yas Marina F1 Circuit.
+              </h2>
+            </div>
+            <div class="item">
+              <img src="static/images/a2rl-overview.png" alt="A2RL dataset overview with LiDAR, RADAR, IMU and track layout" loading="lazy">
+              <h2 class="subtitle has-text-centered">
+                Sensor and dataset overview showing LiDAR, RADAR, IMU and wheel-speed signals, plus the Yas Marina F1 Circuit layout.
+              </h2>
+            </div>
+            <div class="item">
+              <img src="static/images/a2rl-sensor-placement.png" alt="A2RL racecar sensor placement diagram" loading="lazy">
+              <h2 class="subtitle has-text-centered">
+                The A2RL autonomous racing vehicle and sensor placement used to capture long-range perception data.
+              </h2>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
+    </section>
 
+    <section class="hero is-small is-light">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <h2 class="title is-3 has-text-centered">Key Contributions</h2>
+          <div class="highlight-grid">
+            <article class="highlight-card">
+              <h3>High-speed perception benchmark</h3>
+              <p>The dataset focuses on long-range perception and multi-vehicle interaction under genuine racing constraints rather than everyday road traffic.</p>
+            </article>
+            <article class="highlight-card">
+              <h3>Professionally annotated LiDAR</h3>
+              <p>A2RL V<sub>max</sub> provides large-scale expert labels for 3D perception research in autonomous racing.</p>
+            </article>
+            <article class="highlight-card">
+              <h3>Practical evaluation tooling</h3>
+              <p>The paper includes baseline detection and tracking results and packages the data in a nuScenes-compatible format.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <h2 class="title is-3 has-text-centered">Dataset Scope</h2>
+          <div class="stats-grid">
+            <article class="stat-card">
+              <strong>297</strong>
+              <span>scenes</span>
+            </article>
+            <article class="stat-card">
+              <strong>466</strong>
+              <span>opponent tracks</span>
+            </article>
+            <article class="stat-card">
+              <strong>305,531</strong>
+              <span>LiDAR point clouds</span>
+            </article>
+            <article class="stat-card">
+              <strong>28,791</strong>
+              <span>annotated LiDAR frames</span>
+            </article>
+            <article class="stat-card">
+              <strong>38,545</strong>
+              <span>vehicle bounding boxes</span>
+            </article>
+            <article class="stat-card">
+              <strong>386,006</strong>
+              <span>RADAR point clouds</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="hero is-small is-light" id="poster">
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="title is-3 has-text-centered">Paper</h2>
+          <iframe class="pdf-embed" src="static/pdfs/paper.pdf" title="A2RL Vmax paper PDF"></iframe>
+        </div>
+      </div>
+    </section>
 
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <div class="bibtex-header">
+          <h2 class="title">BibTeX</h2>
+          <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+            <i class="fas fa-copy"></i>
+            <span class="copy-text">Copy</span>
+          </button>
+        </div>
+        <pre id="bibtex-code"><code>@inproceedings{klemp2026a2rlvmax,
+  title={A2RL Vmax: The A2RL autonomous racing dataset for long-range, high-speed perception and multi-vehicle interaction},
+  author={Klemp, Marvin and Ebner, Dominic and Schr{\"o}der, Cornelius and Malvezzi, Davide and Tur{\'a}nyi, L{\'a}szl{\'o} and Donati, Riccardo and Schminik, Ilia and Ning, Xia and Zhou, Yanxin and Flagg, Matthew and Stiller, Christoph and Lienkamp, Markus and Bertogna, Marko and B{\'a}ri, Gergely and Birk, Andreas and Jin, Ren and Lv, Chen and Betz, Johannes},
+  booktitle={IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)},
+  year={2026},
+  url={https://tum-avs.github.io/A2RL_Dataset_website/}
+}</code></pre>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
     <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page is based on the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>, originally adapted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              The paper PDF embedded above is provided for convenient reading, and the website structure has been tailored to present the A2RL V<sub>max</sub> paper content directly.
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
-          <span class="copy-text">Copy</span>
-        </button>
-      </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
-}</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+  </footer>
+</body>
+</html>
